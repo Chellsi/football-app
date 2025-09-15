@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaUsers, FaTrophy, FaClock } from 'react-icons/fa';
-import { PiSoccerBallFill } from 'react-icons/pi';
+import { FaUsers, FaClock } from 'react-icons/fa';
+import { FaPerson } from "react-icons/fa6";
+import { MdPeopleOutline } from "react-icons/md";
 import type { Team } from '../types/Team';
 
 interface StatsProps {
@@ -21,20 +22,20 @@ const Stats: React.FC<StatsProps> = ({ teams }) => {
       </div>
       
       <div className="bg-green-100 p-4 rounded-lg text-center">
-        <PiSoccerBallFill className="mx-auto mb-2 text-green-600 text-2xl" />
+        <FaPerson className="mx-auto mb-2 text-green-600 text-2xl" />
         <h3 className="text-lg font-semibold text-green-800">Гравців</h3>
         <p className="text-2xl font-bold text-green-900">{totalPlayers}</p>
       </div>
       
       <div className="bg-yellow-100 p-4 rounded-lg text-center">
-        <FaTrophy className="mx-auto mb-2 text-yellow-600 text-2xl" />
-        <h3 className="text-lg font-semibold text-yellow-800">Середньо</h3>
+        <MdPeopleOutline className="mx-auto mb-2 text-yellow-600 text-2xl" />
+        <h3 className="text-lg font-semibold text-yellow-800">Середньо гравців</h3>
         <p className="text-2xl font-bold text-yellow-900">{avgPlayers}</p>
       </div>
 
       <div className="bg-purple-100 p-4 rounded-lg text-center">
         <FaClock className="mx-auto mb-2 text-purple-600 text-2xl" />
-        <h3 className="text-lg font-semibold text-purple-800">Найстаріша</h3>
+        <h3 className="text-lg font-semibold text-purple-800">Найстаріша команда</h3>
         <p className="text-2xl font-bold text-purple-900">{oldestTeam || '-'}</p>
       </div>
     </div>

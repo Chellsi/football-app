@@ -35,10 +35,10 @@ const App: React.FC = () => {
     },
     {
       id: 3,
-      name: 'Дніпро-1',
-      coach: 'Йосип Михайлович',
+      name: 'Полісся',
+      coach: 'Руслан Ротань',
       players: 23,
-      founded: 2017,
+      founded: 2016,
       league: 'Прем\'єр-ліга'
     }
   ]);
